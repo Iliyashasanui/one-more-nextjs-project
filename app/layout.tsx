@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Pacifico } from 'next/font/google'; // ✅ Correct imports
+import { Inter, Roboto_Mono, Pacifico } from "next/font/google";
+import "./globals.css";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
-const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const geist = Inter({ subsets: ["latin"], variable: "--font-geist" });
+const mono = Roboto_Mono({ subsets: ["latin"], variable: "--font-mono" });
 const pacifico = Pacifico({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-pacifico',
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pacifico",
 });
 
 export const metadata: Metadata = {
