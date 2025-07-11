@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { GeistSans, GeistMono } from 'geist/font';
-import { Pacifico } from "next/font/google";
-import "./globals.css";
+import { Geist, Geist_Mono, Pacifico } from 'next/font/google'; // ✅ Correct imports
 
-// Fonts
-const geist = GeistSans();
-const mono = GeistMono();
-
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" });
 const pacifico = Pacifico({
   weight: '400',
   subsets: ['latin'],
