@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 
-const geist = Inter({ subsets: ["latin"], variable: "--font-geist" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const mono = Roboto_Mono({ subsets: ["latin"], variable: "--font-mono" });
 const pacifico = Pacifico({
   weight: "400",
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${geist.className} ${mono.className} ${pacifico.variable} text-white bg-black`}>
+      <body className={`${inter.variable} ${mono.variable} ${pacifico.variable} text-white bg-black`}>
         {children}
       </body>
     </html>
